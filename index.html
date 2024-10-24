@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
     <title>Cadastro</title>
 </head>
 <body>
@@ -15,23 +16,23 @@
     <form>
         <fieldset class="group">
             <div class="field">
-                <label for="name">Nome</label>
+                <label for="name"><strong>Nome</strong></label>
                 <input type="text" name="name" id="name" required>
             </div>
 
             <div class="field">
-                <label for="surname">Sobrenome</label>
+                <label for="surname"><strong>Sobrenome</strong></label>
                 <input type="text" name="surname" id="surname" required>
             </div>
         </fieldset>
 
         <div class="field">
-            <label for="email">Email</label>
+            <label for="email"><strong>Email</strong></label>
             <input type="email" nome="email" id="email" required>
         </div>
 
         <div class="field">
-            <label>De qual lado da aplicação você desenvolve?</label>
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
             <label>
                 <input type="radio" name="devweb" value="frontend" checked>Front-end
             </label>
@@ -44,8 +45,8 @@
         </div>
 
         <div class="field">
-            <label>Senioridade</label>
-            <select id="senioridade">
+            <label for="seniority"><strong>Senioridade</strong></label>
+            <select id="seniority">
                 <option selected disabled value="">Selecione...</option> 
                 <option>Junior</option>
                 <option>Pleno</option>
@@ -55,7 +56,7 @@
 
         <fieldset class="group">
             <div class="field">
-                <label>Selecione as tecnologias que utiliza:</label><br><br>
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
                 <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
@@ -78,7 +79,7 @@
             <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
         </div>
 
-        <button type="submit">Concluído</button>
+        <button class="button" type="submit">Concluído</button>
     </form>
 </body>
 </html>
